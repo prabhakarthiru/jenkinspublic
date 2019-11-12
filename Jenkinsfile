@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
 	agent any
 	       stages {
                    stage('one'){
@@ -13,7 +13,7 @@ pipeline{
                                       input ('do you want to proceed')
                                 }
                    }
-                   state ('three') {
+                   stage ('three') {
                             when {
 							        not {
                                            branch "master"
