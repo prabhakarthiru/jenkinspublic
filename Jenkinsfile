@@ -14,13 +14,11 @@ pipeline{
                                 }
                    }
                    state ('three') {
-                                    steps {
-                                          when {
-
-                                          not {
+                            when {
+							        not {
                                            branch "master"
                                           }
-                                          }
+                                  }
                                      steps {
 
                                            echo "Hello"
@@ -30,4 +28,3 @@ pipeline{
 
 
 	       }
-}
