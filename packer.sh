@@ -1,4 +1,4 @@
 # packer script
 
-source cicd/assumerole.env
+ ./cicd/assumerole.sh
 
