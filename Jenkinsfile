@@ -10,7 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      sh 'sh packer.sh'
+                                      sh 'sh cicd/assumerole.sh'
                                 }
                    }
 
