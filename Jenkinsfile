@@ -10,7 +10,9 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      sh 'sh cicd/assumerole.env'
+                                      source cicd/assumerole.env
+                                      echo 'role assume successfully'
+
                                 }
                    }
 
