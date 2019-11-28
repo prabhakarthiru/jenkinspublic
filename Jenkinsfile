@@ -10,7 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      source cicd/assumerole.env
+                                      sh 'sh packer.sh'
                                       echo 'role assume successfully'
 
                                 }
