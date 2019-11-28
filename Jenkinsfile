@@ -11,7 +11,7 @@ pipeline {
                    stage('TWO') {
                                 steps {
                                       source assumerole.env
-                                      /usr/bin/aws sts get-caller-identity
+                                      sh '/usr/bin/aws sts get-caller-identity'
                                 }
                    }
 
