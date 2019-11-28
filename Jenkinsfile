@@ -10,7 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      input ('do you want to proceed')
+                                      sh 'sh packer.sh'
                                 }
                    }
                    stage ('three') {
