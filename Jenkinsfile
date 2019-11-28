@@ -10,8 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      source assumerole.sh
-                                      sh '/usr/bin/aws sts get-caller-identity'
+                                      sh 'sh packer.sh'
                                 }
                    }
 
