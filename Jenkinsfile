@@ -10,6 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
+                                      source assumerole.env
                                       sh 'sh packer.sh'
                                 }
                    }
