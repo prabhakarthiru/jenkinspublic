@@ -1,5 +1,5 @@
 # packer script
 
-source assumerole.sh
+source cicd/assumerole.env
 
 /usr/bin/aws sts get-caller-identity
