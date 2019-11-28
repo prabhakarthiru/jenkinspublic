@@ -10,7 +10,7 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      sh 'sh cicd/assumerole.sh'
+                                      sh 'sh cicd/assumerole.env'
                                 }
                    }
 
