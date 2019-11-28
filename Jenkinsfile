@@ -10,20 +10,11 @@ pipeline {
 
                    stage('TWO') {
                                 steps {
-                                      sh 'sh packer.sh'
+                                      source assumerole.env
+                                      /usr/bin/aws sts get-caller-identity
                                 }
                    }
-                   stage ('three') {
-                            when {
-							        not {
-                                           branch "master"
-                                          }
-                                  }
-                                     steps {
 
-                                           echo "Hello"
-                                     }
-                                    }
                    }
 
 
